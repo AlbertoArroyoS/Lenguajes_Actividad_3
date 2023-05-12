@@ -11,12 +11,14 @@
                 <h1>
                     <xsl:value-of select="//empresa" />
                 </h1>
-                <p>EDIX - Instituto Tecnológico</p>
-                <p>CF Grados Superiores FP con altas tasas de empleabilidad
+                <p class="edix">EDIX - Instituto Tecnológico</p>
+                <p class="claim">CF Grados Superiores FP con altas tasas de empleabilidad
                 </p>
-                <a class="linkform" href="#formulario">Contáctanos</a> <br></br>
+                <div>
+
+                <a class="linkform" href="#formulario">Contáctanos</a> 
                 <a href="https://unirfp.unir.net/" target="blank">Visita nuestra web</a>
-                
+            </div>
                 <h2>Claustro de profesores</h2>
                 <table>
                     <thead>
@@ -73,15 +75,17 @@
                 <h2>Ciclos Superiores</h2>
                 <ul>
                     <xsl:for-each select="//ciclos/ciclo" >
-                        <li><xsl:value-of select="nombre" /></li>
+                        <li><xsl:value-of select="nombre" /> - <xsl:value-of select="@id" /> - (Año decreto: <xsl:value-of select="decretoTitulo/@año" />)</li>
                     </xsl:for-each>
                 </ul>
 
 
                 <form id="formulario">
                     <legend>FORMULARIO DE INSCRIPCIÓN</legend>
+                    <br></br>
+
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" />
+                    <input type="text" id="nombre" name="nombre" />                    
                     <br></br>
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos" />
