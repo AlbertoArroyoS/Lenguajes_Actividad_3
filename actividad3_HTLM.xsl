@@ -14,9 +14,13 @@
             <!-- Con arroba (@) accedemos a los atributos -->
             <h1><xsl:value-of select="ite/@nombre"/></h1>
             <ul>               
-                <li><p>Telefono:<xsl:value-of select="ite/empresa"/></p> </li>
-                <li><p>Empresa:<xsl:value-of select="ite/telefono"/></p> </li>
-                <li><p>Pagina Web: <xsl:value-of select="@web"/></p></li>
+                <li><p>Empresa: <xsl:value-of select="ite/empresa"/></p> </li>
+                <li><p>Telefono: <xsl:value-of select="ite/telefono"/></p> </li>
+                <li>
+                    <a href="https://institutotecnologico.edix.com">
+                    <p>Pagina Web: <xsl:value-of select="ite/@web"/></p>
+                    </a>
+                </li>
             </ul>
 
             <!-- Tabla con la lista de profesores con su id -->
@@ -37,7 +41,13 @@
                     </xsl:for-each> <!-- Fin de for each de profesores -->
                 </tbody>
             </table>
-            <!-- Tabla con datos de directora -->
+            <!-- lista Equipo directivo del Centro -->
+            <h2>Equipo directivo</h2>
+            <ol>               
+                <li><p>Director/a : <xsl:value-of select="ite/director/nombre"/></p> </li>
+                <li><p>Jefe de estudios : <xsl:value-of select="ite/jefe_estudios/nombre"/></p> </li>               
+            </ol>
+
             <table border="1">
                 <caption><h2>Director/a</h2></caption>
                 <thead>
@@ -69,17 +79,14 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- Lista ordenada con la lista Ciclos-->
-            <h2>Lista de los ciclos disponibles</h2>
-            <ol>              
-                <xsl:for-each select="ite/ciclos/ciclo">
-                    <li><xsl:value-of select="nombre"/></li>                     
-                </xsl:for-each>                  
-            </ol>
 
              <!-- Tabla con la informacion de los ciclos -->
             <table border="1">
-                <caption><h2>Ciclos formativos</h2></caption>
+                <caption>
+                    <a href="https://www.edix.com/es/fp/">
+                    <h2>Ciclos formativos</h2>
+                    </a>
+                </caption>
                 <thead>
                     <tr>
                         <th>NOMBRE</th>
@@ -99,12 +106,39 @@
                     </xsl:for-each> <!-- Fin de for each de ciclos -->
                 </tbody>
             </table>
-
-
-
-
             <!-- Formulario de contacto-->
+
+  <!--          <div class="forma-caja">
+
+                <form>
+                        
+                    <div class="datos-contacto">
+                        <legend><h3 >Datos contacto</h3></legend>
+                    </div>
+
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Carmen" autofocus/>
+                    
+                    
+                        <label for="surname">Apellidos</label>
+                        <input type="text" name="surname" id="surname" placeholder="Alvarez-Montenegro Piñeiro"/> 
+                    
+                        
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email"required/>
+                    
+                    
+                        <label for="texto">Mensaje</label>
+                        <textarea style="resize: none;"name="texto" id="texto" cols="60" rows="8" placeholder="Mensaje" maxlength="100" required></textarea>            
+                        
+                        <input class="boton" type="submit" value="Enviar"/>         
+                    
+                </form>
+            </div>-->
+
+            <form>
             
+            </form>          
 
 
         </body>
