@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: right;
+  text-shadow: 1px 1px 1px #000000;
+  margin: 0;
+  padding: 20px;
+  background-color: #0077cc;
+  color: #fff;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.edix {
+font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
+  color: #333333;
+}
+
+.claim {
+    font-size: 24px;
+    margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+  color: #666666;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  background-color: #68a5d0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #005ea6;
+}
+
+form {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: hsla(197, 96%, 33%, 0.378);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+  }
+  
+  form input {
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  legend {
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2b3e43a1;
+  }
+  
+  form:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  }
+
+input[type="text"],
+input[type="tel"],
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  margin-right: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0077cc;
+}
