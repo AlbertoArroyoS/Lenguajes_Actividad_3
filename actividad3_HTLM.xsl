@@ -106,41 +106,39 @@
                     </xsl:for-each> <!-- Fin de for each de ciclos -->
                 </tbody>
             </table>
+            <br/>
             <!-- Formulario de contacto-->
-
-  <!--          <div class="forma-caja">
-
-                <form>
-                        
-                    <div class="datos-contacto">
-                        <legend><h3 >Datos contacto</h3></legend>
-                    </div>
-
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name" placeholder="Carmen" autofocus/>
-                    
-                    
-                        <label for="surname">Apellidos</label>
-                        <input type="text" name="surname" id="surname" placeholder="Alvarez-Montenegro Piñeiro"/> 
-                    
-                        
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email"required/>
-                    
-                    
-                        <label for="texto">Mensaje</label>
-                        <textarea style="resize: none;"name="texto" id="texto" cols="60" rows="8" placeholder="Mensaje" maxlength="100" required></textarea>            
-                        
-                        <input class="boton" type="submit" value="Enviar"/>         
-                    
-                </form>
-            </div>-->
-
+            <h2>Formulario de contacto profesor</h2>
             <form>
-            
+                <fieldset>                   
+                    <label for="name">Nombre </label>
+                    <input type="text" name="name" id="name" placeholder="Alberto"/>
+                    
+                    <label for="surname">Apellidos </label>
+                    <input type="text" name="surname" id="surname" placeholder="Arroyo Santofimia"/>
+                    <br/>
+                    <br/>
+                    <label for="email">Email </label>
+                                       
+                    <input type="text" name="email" id="email" placeholder="Email"/>
+                    <br/>
+                    <label for="dia_nacimiento">Escoje al profesor: </label>
+                    <select name="dia_nacimiento">
+                        <option value="PRO1"><xsl:value-of select="ite/profesores/profesor[1]/nombre"/></option> 
+                        <option value="PRO2"><xsl:value-of select="ite/profesores/profesor[2]/nombre"/></option>
+                        <option value="PRO3"><xsl:value-of select="ite/profesores/profesor[3]/nombre"/></option>
+                        <option value="PRO4"><xsl:value-of select="ite/profesores/profesor[4]/nombre"/></option>
+                    </select>
+                    <br />
+                    <label for="observaciones">Observaciones: </label>
+                    <br />	
+                    
+                    <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
+                    <br />
+                    <input class="boton" type="submit" value="Enviar"/>  
+                
+                </fieldset>
             </form>          
-
-
         </body>
         </html>     
     </xsl:template>
