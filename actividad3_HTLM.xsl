@@ -47,7 +47,7 @@
                 <li><p>Director/a : <xsl:value-of select="ite/director/nombre"/></p> </li>
                 <li><p>Jefe de estudios : <xsl:value-of select="ite/jefe_estudios/nombre"/></p> </li>               
             </ol>
-
+            <!-- Tabla con datos del director/a -->
             <table border="1">
                 <caption><h2>Director/a</h2></caption>
                 <thead>

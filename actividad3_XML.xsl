@@ -9,7 +9,7 @@
     <!-- Nos situamos en el nodo raíz -->
     <xsl:template match="/">
       <ite>
-      <!-- Paso los elementos a atributos -->
+      <!-- Paso los atributos de ite nombre y web como elementos -->
           <nombre><xsl:value-of select="/ite/@nombre"/></nombre>
           <empresa><xsl:value-of select="/ite/empresa"/></empresa>
           <telefono><xsl:value-of select="/ite/telefono"/></telefono>
@@ -24,12 +24,12 @@
                   </profe>
               </xsl:for-each>
           </profes>
-          <!-- Paso los elementos como atributos -->
+          <!-- Paso los elementos de director como atributos -->
           <director>
               <xsl:attribute name="nombre"><xsl:value-of select="/ite/director/nombre"/></xsl:attribute>
               <xsl:attribute name="despacho"><xsl:value-of select="/ite/director/despacho"/></xsl:attribute>
             </director>
-          <!-- Pasamos los elementos como atributos -->
+          <!-- Pasamos los elementos jefe_estudios como atributos -->
           <jefe_estudios>
               <xsl:attribute name="nombre"><xsl:value-of select="/ite/jefe_estudios/nombre"/></xsl:attribute>
               <xsl:attribute name="despacho"><xsl:value-of select="/ite/jefe_estudios/despacho"/></xsl:attribute>
