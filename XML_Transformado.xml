@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML original después de ser transformado con la nueva estructura-->
+
 <instituto>
    <informacion>
       <nombre>Instituto Tecnológico Edix</nombre>
