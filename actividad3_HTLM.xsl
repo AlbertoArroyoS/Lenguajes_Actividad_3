@@ -42,11 +42,13 @@
                 </tbody>
             </table>
             <!-- lista Equipo directivo del Centro -->
-            <h2>Equipo directivo</h2>
-            <ol>               
-                <li><p>Director/a : <xsl:value-of select="ite/director/nombre"/></p> </li>
-                <li><p>Jefe de estudios : <xsl:value-of select="ite/jefe_estudios/nombre"/></p> </li>               
-            </ol>
+            <div class="equipo_d">
+                <h2>Equipo directivo</h2>
+                <ol>               
+                    <li><p>Director/a : <xsl:value-of select="ite/director/nombre"/></p> </li>
+                    <li><p>Jefe de estudios : <xsl:value-of select="ite/jefe_estudios/nombre"/></p> </li>               
+                </ol>
+            </div>
             <!-- Tabla con datos del director/a -->
             <table border="1">
                 <caption><h2>Director/a</h2></caption>
@@ -109,7 +111,7 @@
             <br/>
             <!-- Formulario de contacto-->
             <h2>Formulario de contacto profesor</h2>
-            <form>
+            <form action="procesarPeticion.jsp" method="get">
                 <fieldset>                   
                     <label for="name">Nombre </label>
                     <input type="text" name="name" id="name" placeholder="Alberto"/>

@@ -2,7 +2,6 @@ html{
     font-family: 'Poppins', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-image: url(./Alberto/css/fondo3.svg);
     background-repeat: repeat-y;
     background-size: cover;
 }
@@ -28,43 +27,99 @@ ul {
     list-style-type: none;
     margin: 30px 0;
     padding: 0;
-  }
+}
 
-  li {
+li {
     margin-bottom: 10px;
-  }
+}
   
   /* Estilos para la etiqueta p */
-  p {
+p {
     margin: 0;
-  }
+}
   
-  a{
+a{
     text-decoration: none;
     color: #333; 
-  }
-  .web:hover{
+}
+.web:hover{
     background-color: rgb(4, 4, 236);
     color: aliceblue;
-  }
+}
   
   /* Estilos para las tablas */
 table {
     border-collapse: collapse;
     margin: 30px 0;
     width: 100%;
-  }
+}
   /* Estilos primera fila de la tabla, nombre despacho */
-  th {
+th {
     background-color: #333;
     color: #fff;
     font-weight: bold;
     padding: 9px;
-  }
+}
   /* Estilos resto de filas*/
   td {
     border: 1px solid #ccc;
     padding: 10px;
-  }
+}
 
-  
+  /* Estilos para titulos de las tablas */
+caption {
+    font-size: 24px;
+    margin: 30px 0;
+}
+/* Estilos para la lista ordenada del equipo directivo*/
+ol {
+    list-style-type: decimal;
+    margin: 30px 0;
+      
+}
+.equipo_d{
+    border: 1px solid #4d4d4d;
+    border-radius: 5%;
+  }
+.equipo_d h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Estilos formulario de contacto */
+fieldset {
+    border: none;
+    margin: 30px 0;
+}
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+select {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+  }
+textarea{
+    width: 75%;
+}
+
+input textarea{
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5%;
+}
+
+.boton{
+    margin-top: 15px;
+}
+.boton:hover{
+    color: aqua;
+}
