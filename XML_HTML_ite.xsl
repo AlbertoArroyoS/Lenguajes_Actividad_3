@@ -8,6 +8,8 @@
          </head>
          <body>
 
+            <!-- Información principal de la empresa -->
+
             <h1><xsl:value-of select="//empresa" /></h1>
 
             <h2 class="edix"><xsl:value-of select="//@nombre" /></h2>
@@ -18,6 +20,8 @@
                <a href="https://unirfp.unir.net/" target="blank"> Visita nuestra web</a>
                <a href="tel"> Llámanos al <xsl:value-of select="//telefono" /></a>
             </div>
+
+            <!-- Tabla con el equipo de profesores-->
 
             <div class="claustro">
                <h3>Claustro de profesores</h3>
@@ -44,6 +48,8 @@
                </table>
             </div>
             
+            <!-- Tabla con el equipo de dirección-->
+
             <div class="direccion">
                <h3>Equipo directivo</h3>
                
@@ -78,6 +84,8 @@
                </table>
             </div>
             
+            <!-- Lista no ordenada de las ofertas de Ciclos Superiores-->
+
             <div class="grados">
                <h3>Ciclos Superiores</h3>
             
@@ -89,6 +97,8 @@
                </ul>
             </div>
             
+            <!-- Formulario que contiene desplegable con las opciones de ciclos. -->
+
             <form id="formulario">
                <legend>FORMULARIO DE INSCRIPCIÓN</legend>
                <br/>
@@ -126,6 +136,7 @@
                   </xsl:for-each>
                </select>
                <br/>
+
                <input type="submit" value="Enviar" />
                <input type="reset" value="Borrar" />
                <br/>
