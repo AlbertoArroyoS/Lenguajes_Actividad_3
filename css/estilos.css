@@ -61,9 +61,10 @@ th {
     padding: 9px;
 }
   /* Estilos resto de filas*/
-  td {
+td {
     border: 1px solid #ccc;
     padding: 10px;
+    
 }
 
   /* Estilos para titulos de las tablas */
@@ -122,4 +123,10 @@ input textarea{
 }
 .boton:hover{
     color: aqua;
+}
+.formulario{
+    border: 1px solid #3d3c3c;
+}
+.formulario h2{
+    margin-left: 10px;
 }

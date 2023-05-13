@@ -110,37 +110,39 @@
             </table>
             <br/>
             <!-- Formulario de contacto-->
-            <h2>Formulario de contacto profesor</h2>
-            <form action="procesarPeticion.jsp" method="get">
-                <fieldset>                   
-                    <label for="name">Nombre </label>
-                    <input type="text" name="name" id="name" placeholder="Alberto"/>
+            <div class="formulario">
+                <h2>Formulario de contacto con el profesor</h2>
+                <form action="procesarPeticion.jsp" method="get">
+                    <fieldset>                   
+                        <label for="name">Nombre </label>
+                        <input type="text" name="name" id="name" placeholder="Alberto"/>
+                        
+                        <label for="surname">Apellidos </label>
+                        <input type="text" name="surname" id="surname" placeholder="Arroyo Santofimia"/>
+                        <br/>
+                        <br/>
+                        <label for="email">Email </label>
+                                        
+                        <input type="text" name="email" id="email" placeholder="Email"/>
+                        <br/>
+                        <label for="dia_nacimiento">Escoge al profesor: </label>
+                        <select name="dia_nacimiento">
+                            <option value="PRO1"><xsl:value-of select="ite/profesores/profesor[1]/nombre"/></option> 
+                            <option value="PRO2"><xsl:value-of select="ite/profesores/profesor[2]/nombre"/></option>
+                            <option value="PRO3"><xsl:value-of select="ite/profesores/profesor[3]/nombre"/></option>
+                            <option value="PRO4"><xsl:value-of select="ite/profesores/profesor[4]/nombre"/></option>
+                        </select>
+                        <br />
+                        <label for="observaciones">Observaciones: </label>
+                        <br />	
+                        
+                        <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
+                        <br />
+                        <input class="boton" type="submit" value="Enviar"/>  
                     
-                    <label for="surname">Apellidos </label>
-                    <input type="text" name="surname" id="surname" placeholder="Arroyo Santofimia"/>
-                    <br/>
-                    <br/>
-                    <label for="email">Email </label>
-                                       
-                    <input type="text" name="email" id="email" placeholder="Email"/>
-                    <br/>
-                    <label for="dia_nacimiento">Escoje al profesor: </label>
-                    <select name="dia_nacimiento">
-                        <option value="PRO1"><xsl:value-of select="ite/profesores/profesor[1]/nombre"/></option> 
-                        <option value="PRO2"><xsl:value-of select="ite/profesores/profesor[2]/nombre"/></option>
-                        <option value="PRO3"><xsl:value-of select="ite/profesores/profesor[3]/nombre"/></option>
-                        <option value="PRO4"><xsl:value-of select="ite/profesores/profesor[4]/nombre"/></option>
-                    </select>
-                    <br />
-                    <label for="observaciones">Observaciones: </label>
-                    <br />	
-                    
-                    <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
-                    <br />
-                    <input class="boton" type="submit" value="Enviar"/>  
-                
-                </fieldset>
-            </form>          
+                    </fieldset>
+                </form>
+            </div>          
         </body>
         </html>     
     </xsl:template>
