@@ -12,11 +12,59 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+/* Estilos para las etiquetas */
 
 h1 {
-    color: red;
+    color: rgb(34, 3, 145);
+    font-size: 36px;
+    margin: 25px 0;
 }
 
 h2 {
     color: blue;
 }
+
+ul {
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la etiqueta p */
+  p {
+    margin: 0;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #333; 
+  }
+  .web:hover{
+    background-color: rgb(4, 4, 236);
+    color: aliceblue;
+  }
+  
+  /* Estilos para las tablas */
+table {
+    border-collapse: collapse;
+    margin: 30px 0;
+    width: 100%;
+  }
+  /* Estilos primera fila de la tabla, nombre despacho */
+  th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 9px;
+  }
+  /* Estilos resto de filas*/
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  

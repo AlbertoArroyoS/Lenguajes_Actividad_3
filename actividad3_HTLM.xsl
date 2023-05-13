@@ -18,7 +18,7 @@
                 <li><p>Telefono: <xsl:value-of select="ite/telefono"/></p> </li>
                 <li>
                     <a href="https://institutotecnologico.edix.com">
-                    <p>Pagina Web: <xsl:value-of select="ite/@web"/></p>
+                    <p class="web">Pagina Web: <xsl:value-of select="ite/@web"/></p>
                     </a>
                 </li>
             </ul>
