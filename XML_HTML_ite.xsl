@@ -10,7 +10,7 @@
 
             <h1><xsl:value-of select="//empresa" /></h1>
 
-            <h2 class="edix">EDIX - Instituto Tecnológico</h2>
+            <h2 class="edix"><xsl:value-of select="//@nombre" /></h2>
             
             <div class="claimlink">
                <p class="claim">CF Grados Superiores FP con altas tasas de empleabilidad</p>
