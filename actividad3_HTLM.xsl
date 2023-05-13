@@ -83,31 +83,33 @@
             </table>
 
              <!-- Tabla con la informacion de los ciclos -->
-            <table border="1">
-                <caption>
-                    <a href="https://www.edix.com/es/fp/">
-                    <h2>Ciclos formativos</h2>
-                    </a>
-                </caption>
-                <thead>
-                    <tr>
-                        <th>NOMBRE</th>
-                        <th>ID</th>
-                        <th>GRADO</th>
-                        <th>DECRETO</th>   
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:for-each select="ite/ciclos/ciclo">
+             <div class="ciclos_f">
+                <table border="1">
+                    <caption>
+                        <a href="https://www.edix.com/es/fp/">
+                        <h2>Ciclos formativos</h2>
+                        </a>
+                    </caption>
+                    <thead>
                         <tr>
-                            <td><xsl:value-of select="nombre"/></td>
-                            <td><xsl:value-of select="@id"/></td>
-                            <td><xsl:value-of select="grado"/></td>
-                            <td><xsl:value-of select="decretoTitulo/@año"/></td>    
+                            <th>NOMBRE</th>
+                            <th>ID</th>
+                            <th>GRADO</th>
+                            <th>DECRETO</th>   
                         </tr>
-                    </xsl:for-each> <!-- Fin de for each de ciclos -->
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <xsl:for-each select="ite/ciclos/ciclo">
+                            <tr>
+                                <td><xsl:value-of select="nombre"/></td>
+                                <td><xsl:value-of select="@id"/></td>
+                                <td><xsl:value-of select="grado"/></td>
+                                <td><xsl:value-of select="decretoTitulo/@año"/></td>    
+                            </tr>
+                        </xsl:for-each> <!-- Fin de for each de ciclos -->
+                    </tbody>
+                </table>
+            </div>
             <br/>
             <!-- Formulario de contacto-->
             <div class="formulario">
@@ -138,8 +140,7 @@
                         
                         <textarea style="resize: none;" rows="5" cols="80" name="observaciones"></textarea>
                         <br />
-                        <input class="boton" type="submit" value="Enviar"/>  
-                    
+                        <input class="boton" type="submit" value="Enviar"/>             
                     </fieldset>
                 </form>
             </div>          

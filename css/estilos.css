@@ -72,6 +72,12 @@ caption {
     font-size: 24px;
     margin: 30px 0;
 }
+/*Estilos tabla de ciclos*/
+.ciclos_f h2:hover{
+    background-color: aqua;
+    color: black;
+}
+
 /* Estilos para la lista ordenada del equipo directivo*/
 ol {
     list-style-type: decimal;
