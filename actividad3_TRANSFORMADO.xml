@@ -1,35 +1,35 @@
 <?xml version="1.0"?>
 <ite>
-	<nombre>Instituto TecnolÛgico Edix</nombre>
+	<nombre>Instituto Tecnol√≥gico Edix</nombre>
 	<empresa>Proeduca</empresa>
 	<telefono>+34 91 787 39 91</telefono>
 	<web>https://institutotecnologico.edix.com</web>
 	<profes>
 		<profe id="1">
-			<nombre>FÈlix</nombre>
+			<nombre>F√©lix</nombre>
 		</profe>
 		<profe id="2">
-			<nombre>Ra˙l</nombre>
+			<nombre>Ra√∫l</nombre>
 		</profe>
 		<profe id="3">
 			<nombre>Raquel</nombre>
 		</profe>
 		<profe id="4">
-			<nombre>Tom·s</nombre>
+			<nombre>Tom√°s</nombre>
 		</profe>
 	</profes>
-	<director nombre="Chon" despacho="Numero 31, 3™ Planta, Edificio A"/>
-	<jefe_estudios nombre="Dani" despacho="Numero 27, 2™ Planta, Edificio B"/>
+	<director nombre="Chon" despacho="Numero 31, 3¬™ Planta, Edificio A"/>
+	<jefe_estudios nombre="Dani" despacho="Numero 27, 2¬™ Planta, Edificio B"/>
 	<ciclos_fp>
-		<ciclo aÒo_decreto="2009" grado="Superior">
+		<ciclo a√±o_decreto="2009" grado="Superior">
 			<id>ASIR</id>
-			<nombre>AdministraciÛn de Sistemas Inform·ticos en Red</nombre>
+			<nombre>Administraci√≥n de Sistemas Inform√°ticos en Red</nombre>
 		</ciclo>
-		<ciclo aÒo_decreto="2010" grado="Superior">
+		<ciclo a√±o_decreto="2010" grado="Superior">
 			<id>DAW</id>
 			<nombre>Desarrollo de Aplicaciones Web</nombre>
 		</ciclo>
-		<ciclo aÒo_decreto="2010" grado="Superior">
+		<ciclo a√±o_decreto="2010" grado="Superior">
 			<id>DAM</id>
 			<nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
 		</ciclo>
