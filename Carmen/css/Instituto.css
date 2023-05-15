@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+h1{
+    color: rgba(141, 159, 222, 0.637);
+}
+
+
+/* FORMULARIO DE CONTACTO */
+fieldset{   
+    
+    display: flex;
+    justify-content: center;    
+    padding:2% 2%;    
+    box-shadow: 0 0 20px rgba(119, 136, 153, 25);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    width:30%;    
+    border:2px solid;
+    overflow: hidden;
+ 
+    }
+
+form{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px;
+    overflow: hidden;
+    width: 98%;
+    font-size: 1.5em;
+}
