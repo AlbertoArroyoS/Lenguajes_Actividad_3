@@ -5,11 +5,12 @@
 tendremos que indicarlo de la siguiente manera -->
 
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-<!--El nodo raíz será "instituto", y éste tendrá otros elemntos  como: equipo  -->
+<!--El nodo raíz será "instituto", y éste tendrá otros elemntos  como: docentes,equipo directivo, formación y datos de contacto  -->
     <xsl:template match="/">
     
-    <instituto>
-             
+    <instituto>  
+    
+<!--Dentro de la etiqueta docentes tenemos la etiqueta profesor cuyo atributo será el "id"  -->
             <docentes>
                <xsl:for-each select="/ite/profesores/profesor">
                 <profesor>
@@ -22,14 +23,14 @@ tendremos que indicarlo de la siguiente manera -->
             </docentes> 
 
             <equipo_directivo>
-                 
+<!--Englobamos al director y jefe de estudios dentro de la etiqueta "equipo_directivo"                  -->
               <director><xsl:value-of select="ite/director/nombre"/></director> 
               <despacho><xsl:value-of select="ite/director/despacho"/></despacho> 
               <jefe_estudios><xsl:value-of select="ite/jefe_estudios/nombre"/></jefe_estudios> 
               <despacho><xsl:value-of select="/ite/jefe_estudios/despacho"/></despacho>       
                           
             </equipo_directivo>        
-
+<!--La formación vendrá determinada por un atributo "curso" que será el nombre del ciclo , el resto serán elementos  -->
             <formacion>
                 <xsl:for-each select="/ite/ciclos/ciclo">
                     <ciclo>
@@ -42,7 +43,7 @@ tendremos que indicarlo de la siguiente manera -->
                     </ciclo>
                 </xsl:for-each>
             </formacion>
-
+<!-- Etiqueta nueva con los datos de contacto del Instituto -->
             <datos_contacto>
               <nombre><xsl:value-of select="ite/@nombre"/></nombre>
               <web><xsl:value-of select="ite/@web"/></web>
