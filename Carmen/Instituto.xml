@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Instituto_html.xsl"?>
+<!-- Transformacion a modelo HTML.xsl -->
+<!-- <?xml-stylesheet type="text/xsl" href="Instituto_html.xsl"?> -->
+<!-- Transformación de este XML a otro XML -->
+<?xml-stylesheet type="text/xsl" href="Instituto_xml_xml.xsl"?>
 
 <!--El elemento raíz será "ite" y contará con otros elementos como: empresa, teléfono, profesores,
 director, jefe-estudios y ciclos -->
 
-<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
+<ite nombre="Instituto Tecnologico Edix" web="https://institutotecnologico.edix.com" >
 
     <empresa>Proeduca</empresa>
     <telefono>+34 91 787 39 91</telefono>
@@ -13,14 +16,14 @@ director, jefe-estudios y ciclos -->
         <profesor>
 
             <id>1</id>
-            <nombre>Félix</nombre>
+            <nombre>Felix</nombre>
 
         </profesor>
 
         <profesor>
 
             <id>2</id>
-            <nombre>Raúl</nombre>
+            <nombre>Raul</nombre>
 
         </profesor>
 
@@ -34,7 +37,7 @@ director, jefe-estudios y ciclos -->
         <profesor>
 
             <id>4</id>
-            <nombre>Tomás</nombre>
+            <nombre>Tomas</nombre>
 
         </profesor>
 
@@ -58,7 +61,7 @@ director, jefe-estudios y ciclos -->
 
         <ciclo id="ASIR">
 
-            <nombre>Administración de Sistemas Informáticos en Red</nombre>
+            <nombre>Administración de Sistemas Informaticos en Red</nombre>
             <grado>Superior</grado>
             <decretoTitulo año="2009" />
 
