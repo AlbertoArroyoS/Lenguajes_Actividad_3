@@ -6,25 +6,56 @@
     margin: 0%;
     padding: 0%;
 }
-
+ body{
+    background-color: rgba(240, 247, 255, 0.511);
+ }
 
 h1{
-    color: rgba(141, 159, 222, 0.637);
+    color: rgba(13, 123, 123, 0.39);
+    text-align: center;
+    font-size: 4em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-
-/* FORMULARIO DE CONTACTO */
-fieldset{   
+h2{
+    color: rgba(6, 170, 170, 0.963);
+    margin-top:2%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    font-size: 1.7em;
     
-    display: flex;
-    justify-content: center;    
+
+}
+
+p, a{
+    font-size: 1.2em;
+    justify-content: center;
+    margin-bottom: 0.8%;
+    margin-left: 1%;
+}
+
+li{
+    font-size: 1.2em;
+    margin-left: 4%;
+
+}
+
+table{
+    background-color: rgba(207, 228, 221, 0.174);
+    margin-left:1% ;
+    margin-bottom: 1.5%;
+}
+/* FORMULARIO DE CONTACTO */
+.forma-caja{   
+    
+    display: flex;     
     padding:2% 2%;    
     box-shadow: 0 0 20px rgba(119, 136, 153, 25);
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 10px;    
     margin-top:2%;
-    width:30%;    
+    margin-bottom: 1%;
+    margin-left:1%;
+    width:25%;    
     border:2px solid;
     overflow: hidden;
  
@@ -36,6 +67,33 @@ form{
     text-align: left;
     border: 1px;
     overflow: hidden;
-    width: 98%;
-    font-size: 1.5em;
+    width: 95%;
+    font-size: 1.1em;
+}
+ 
+
+label, select{
+    color: black;
+    font-size: 1.1em;
+    margin-bottom: 1.5%;
+    font-weight: 300;    
+   
+
+}
+input, textarea{
+    
+    padding: 1.2% 1.2%;
+    border-radius:15px ;
+    margin-bottom: 6%;    
+    font-size:80% ;
+    
+    
+}
+
+
+.boton{
+    font-size: medium;
+    background-color:rgba(0, 139, 139, 0.34);
+    cursor:pointer;
+    color: rgb(21, 18, 18);
 }

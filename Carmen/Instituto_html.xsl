@@ -9,12 +9,12 @@
         <head>
             <title>Instituto Edix</title>
             <!-- Añadimos enlace al fichero CSS para darle estilo al documento -->
-            <link rel="stylesheet" href="../Lenguajes_Actividad_3/css/Instituto.css"/>
+            <link rel="stylesheet" href="../Carmen/css/Instituto.css"/>
 
         </head>
         <body>
 
-          <h1><xsl:value-of select="ite/@nombre"/></h1> 
+          <h1><i><xsl:value-of select="ite/@nombre"/></i></h1> 
 <!-- Tabla informativa de los ciclos formativos que se ofertan en el Instituto -->
 
           <h2>Conoce nuestros ciclos</h2>
@@ -82,9 +82,10 @@
  
     
     <!-- Formulario de contacto --> 
+    <div class="forma-caja">
     <form>
-         <fieldset> 
-            <label for="ciclo">Escoja el ciclo sobre el que quiere hacer la consulta </label><br/>
+         
+            <label for="ciclo">Sobre que ciclo quiere hacer la consulta </label><br/>
             <select name="Ciclo">
                 <option value="ASIR"><xsl:value-of select="ite/ciclos/ciclo[1]/nombre"/></option>
                 <option value="DAW"><xsl:value-of select="ite/ciclos/ciclo[2]/nombre"/></option>
@@ -108,13 +109,9 @@
             <textarea style="resize: none;" name="texto" id="texto" cols="60" rows="8" placeholder="Mensaje" maxlength="100" ></textarea><br/>   
              
             <input class="boton" type="submit" value="Enviar"/>         
-         </fieldset> 
+        
     </form>
-
-
-
-
-
+    </div>
 
 
 <!--Enlaces y datos de contacto  -->
