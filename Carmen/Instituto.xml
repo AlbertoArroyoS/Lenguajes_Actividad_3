@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!-- Transformacion a modelo HTML.xsl -->
 <!-- <?xml-stylesheet type="text/xsl" href="Instituto_html.xsl"?> -->
+
+
 <!-- Transformación de este XML a otro XML -->
 <?xml-stylesheet type="text/xsl" href="Instituto_xml_xml.xsl"?>
 
