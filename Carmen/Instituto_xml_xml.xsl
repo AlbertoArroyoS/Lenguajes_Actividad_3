@@ -43,11 +43,13 @@ tendremos que indicarlo de la siguiente manera -->
                     </ciclo>
                 </xsl:for-each>
             </formacion>
-<!-- Etiqueta nueva con los datos de contacto del Instituto -->
+<!-- Etiqueta nueva con los datos de contacto del Instituto cuyo atributo será "empresa" que vendrá determinado por el nombre de la misma-->
             <datos_contacto>
+              <xsl:attribute name="empresa">
+                    <xsl:value-of select="ite/empresa"/>
+              </xsl:attribute>
               <nombre><xsl:value-of select="ite/@nombre"/></nombre>
-              <web><xsl:value-of select="ite/@web"/></web>
-              <empresa><xsl:value-of select="ite/empresa"/></empresa>
+              <web><xsl:value-of select="ite/@web"/></web>              
               <telefono><xsl:value-of select="ite/telefono"/></telefono>
             </datos_contacto>
 
