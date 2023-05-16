@@ -30,7 +30,18 @@ tendremos que indicarlo de la siguiente manera -->
                           
             </equipo_directivo>        
 
-           
+            <formacion>
+                <xsl:for-each select="/ite/ciclos/ciclo">
+                    <ciclo>
+                        <xsl:attribute name="curso">
+                            <xsl:value-of select="nombre"/>
+                        </xsl:attribute>
+                        <codigo><xsl:value-of select="@id"/></codigo>              
+                        <grado><xsl:value-of select="grado"/></grado>
+                        <decreto><xsl:value-of select="decretoTitulo/@año"/></decreto>              
+                    </ciclo>
+                </xsl:for-each>
+            </formacion>
 
             <datos_contacto>
               <nombre><xsl:value-of select="ite/@nombre"/></nombre>
